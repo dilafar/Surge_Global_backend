@@ -1,11 +1,12 @@
 import jwt from 'jsonwebtoken';
+import 'dotenv/config';
 
 export const authenticate = async(req , res , next) =>{
     try{
         const token = req.headers.authorization.split(" ")[1];
         let decodeData;
         if(token){
-            decodeData = jwt.verify(token , 'test');
+            decodeData = jwt.verify(token , process.env.JWT_SECRET);
             req.Id = decodeData?.id;
             req.Email = decodeData?.email;
         }

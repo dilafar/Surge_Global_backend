@@ -66,3 +66,13 @@ export const getSingleUserController = async(req , res)=>{
         res.status(err.status).json(err.message);
     }
 }
+
+export const updateUserStatusController = async(req , res)=>{
+    try{
+        const user = await updateUserService(req.params.id , req.body);
+        res.json(Success(user,"User Updated Successfully."));
+
+    }catch(err){
+        res.status(err.status).json(err.message);
+    }
+};

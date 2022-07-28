@@ -38,7 +38,6 @@ const UserSchema =new mongoose.Schema({
     accountType:{
         type: String,
         required: true,
-        trim: true
     }
 
 
