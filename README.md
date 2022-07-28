@@ -18,7 +18,7 @@ git clone https://github.com/dilafar/Surge_Global_backend.git
   
 3. create a .env file to store the secrets
 
-      MONGO_URL =mongodb+srv://<username>:<password>@cluster0.9f87n.mongodb.net/<databasename>?retryWrites=true&w=majority
+      MONGO_URL =mongodb+srv://<username/>:<password/>@cluster0.9f87n.mongodb.net/<databasename/>?retryWrites=true&w=majority
       
       JWT_SECRET=<JWT_SECRET>
       
