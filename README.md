@@ -7,13 +7,17 @@ git clone https://github.com/dilafar/Surge_Global_backend.git
 
 2.install relevent dependencies 
 
- if youre using npm then ,
- 
-  npm install
-  
- if yore using yarn then , 
- 
-  yarn add
+    if youre using npm then ,
+
+        npm install
+
+    if yore using yarn then ,
+
+        yarn add
+
+    if using Docker then ,
+
+        docker-compose up -d --build
   
   
 3. create a .env file to store the secrets
